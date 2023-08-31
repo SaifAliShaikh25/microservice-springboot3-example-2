@@ -1,0 +1,5 @@
+package com.example2microservice.employeeservice.controller;
+
+public class EmployeeController {
+
+}

@@ -1,0 +1,9 @@
+package com.example2microservice.departmentservice.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example2microservice.departmentservice.model.Department;
+
+public interface DepartmentRepositoryInterface extends JpaRepository<Department, Long> {
+
+}

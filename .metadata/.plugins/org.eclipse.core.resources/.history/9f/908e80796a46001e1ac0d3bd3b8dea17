@@ -1,0 +1,5 @@
+package com.example2microservice.departmentservice.model;
+
+public record Employee() {
+
+}

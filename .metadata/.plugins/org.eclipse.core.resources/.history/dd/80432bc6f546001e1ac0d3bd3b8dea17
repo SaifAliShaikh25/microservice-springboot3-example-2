@@ -1,0 +1,12 @@
+package com.example2microservice.employeeservice.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Employee {
+
+	private Long id;
+	private String name;
+	private String code;
+	private Long departmentId;
+}

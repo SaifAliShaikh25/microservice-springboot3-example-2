@@ -1,0 +1,9 @@
+package com.example2microservice.departmentservice.model;
+
+public class Department {
+	
+	private Long id;
+	private String name;
+	private List<Employee> employees = new ArrayList<>();
+
+}

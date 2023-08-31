@@ -1,0 +1,1093 @@
+!SESSION 2023-08-29 16:11:40.629 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-08-29 16:11:43.798
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-08-29 16:11:53.116
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-29 16:11:53.117
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-08-29 16:12:00.587
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\saifa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 4 2 2023-08-29 16:18:11.004
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Control.setEnabled(Control.java:3402)
+	at org.eclipse.ui.internal.themes.ColorsAndFontsPreferencePage.updateControls(ColorsAndFontsPreferencePage.java:1915)
+	at org.eclipse.ui.internal.themes.ColorsAndFontsPreferencePage.lambda$1(ColorsAndFontsPreferencePage.java:1009)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:780)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:777)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1542)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1211)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:329)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jface 4 0 2023-08-29 16:18:11.006
+!MESSAGE An error has occurred. See error log for more details.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
+	at org.eclipse.swt.widgets.Control.setEnabled(Control.java:3402)
+	at org.eclipse.ui.internal.themes.ColorsAndFontsPreferencePage.updateControls(ColorsAndFontsPreferencePage.java:1915)
+	at org.eclipse.ui.internal.themes.ColorsAndFontsPreferencePage.lambda$1(ColorsAndFontsPreferencePage.java:1009)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:780)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:777)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1542)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1211)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:329)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-08-29 16:18:13.164
+!MESSAGE An internal error occurred during: "Update validate job".
+!STACK 0
+java.lang.IllegalStateException: Attempt to access stopped agent: org.eclipse.equinox.internal.p2.core.ProvisioningAgent@4261bcfd
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.checkRunning(ProvisioningAgent.java:86)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:50)
+	at org.eclipse.equinox.p2.core.IProvisioningAgent.getService(IProvisioningAgent.java:86)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getLoadedMetadataRepositories(ProvisioningContext.java:213)
+	at org.eclipse.equinox.p2.engine.ProvisioningContext.getMetadata(ProvisioningContext.java:312)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.gatherAvailableInstallableUnits(SimplePlanner.java:357)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getSolutionFor(SimplePlanner.java:434)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.generatePlan(SimplePlanner.java:835)
+	at org.eclipse.equinox.internal.p2.director.SimplePlanner.getProvisioningPlan(SimplePlanner.java:533)
+	at org.eclipse.equinox.internal.p2.operations.PlannerResolutionJob.runModal(PlannerResolutionJob.java:80)
+	at org.eclipse.equinox.internal.p2.operations.SearchForUpdatesResolutionJob.runModal(SearchForUpdatesResolutionJob.java:50)
+	at org.eclipse.equinox.p2.operations.ProfileChangeOperation.resolveModal(ProfileChangeOperation.java:118)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:122)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater.updatesAvailable(AutomaticUpdater.java:101)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdater$2.run(AutomaticUpdater.java:386)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-08-29 16:18:14.340 -----------------------------------------------
+eclipse.buildId=4.28.0.20230608-1200
+java.version=17.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/E:/Softwares/Eclipse/WorkspaceMicroservices3NewExample1/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-08-29 16:20:28.173
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.springframework.ide.eclipse.batch 4 0 2023-08-29 16:20:28.939
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.batch [1009]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.batch.graph
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.batch.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.config.ui [1028]
+         Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.wizard
+           -> Bundle-SymbolicName: org.springframework.ide.eclipse.wizard; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+              org.springframework.ide.eclipse.wizard [1046]
+                Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+                  -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+                     org.springframework.web [1054]
+                       Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                       Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+                Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+                  -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.bestpractices 4 0 2023-08-29 16:20:28.944
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.bestpractices [1022]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.quickfix
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.quickfix; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.quickfix [1038]
+         Unresolved requirement: Import-Package: javax.servlet; version="[3.1.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.config.ui 4 0 2023-08-29 16:20:28.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.config.ui [1028]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.wizard
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.wizard; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.wizard [1046]
+         Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+           -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+              org.springframework.web [1054]
+                Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+         Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+           -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.data.core 4 0 2023-08-29 16:20:28.960
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.data.core [1030]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.quickfix
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.quickfix; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.quickfix [1038]
+         Unresolved requirement: Import-Package: javax.servlet; version="[3.1.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.metadata 4 0 2023-08-29 16:20:28.971
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.metadata [1036]
+  Unresolved requirement: Import-Package: org.springframework.web.context; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.web.context; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="javax.servlet,org.springframework.beans.factory,org.springframework.context,org.springframework.core.env,org.springframework.web"
+       org.springframework.web [1054]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+  Unresolved requirement: Import-Package: org.springframework.web.bind.annotation; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.web.bind.annotation; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.annotation,org.springframework.http,org.springframework.stereotype"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.quickfix 4 0 2023-08-29 16:20:28.971
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.quickfix [1038]
+  Unresolved requirement: Import-Package: javax.servlet; version="[3.1.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui 4 0 2023-08-29 16:20:28.984
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui [1043]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.graph
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.graph; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.graph"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.webflow.ui.graph [1045]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow
+           -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.webflow.ui.editor [1044]
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+                  -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+                     org.springframework.ide.eclipse.config.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.wizard
+                         -> Bundle-SymbolicName: org.springframework.ide.eclipse.wizard; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+                            org.springframework.ide.eclipse.wizard [1046]
+                              Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+                                -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+                                   org.springframework.web [1054]
+                                     Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                                     Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                                     Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                                     Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                                     Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+                              Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+                                -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+                  -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph
+                  -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+                Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+                  -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor
+           -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui.editor 4 0 2023-08-29 16:20:28.992
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui.editor [1044]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.config.ui [1028]
+         Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.wizard
+           -> Bundle-SymbolicName: org.springframework.ide.eclipse.wizard; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+              org.springframework.ide.eclipse.wizard [1046]
+                Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+                  -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+                     org.springframework.web [1054]
+                       Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                       Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                       Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                       Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                       Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+                Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+                  -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+    -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.webflow.ui.graph 4 0 2023-08-29 16:20:29.011
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.webflow.ui.graph [1045]
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor.outline.webflow; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+       org.springframework.ide.eclipse.webflow.ui.editor [1044]
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.hyperlinks
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.hyperlinks; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+              org.springframework.ide.eclipse.config.ui [1028]
+                Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.wizard
+                  -> Bundle-SymbolicName: org.springframework.ide.eclipse.wizard; bundle-version="3.9.22.202204280911-RELEASE"; singleton:="true"
+                     org.springframework.ide.eclipse.wizard [1046]
+                       Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+                         -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+                            org.springframework.web [1054]
+                              Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                              Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                              Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                              Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                              Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+                       Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+                         -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.editors; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.editors.webflow.graph; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+         Unresolved requirement: Import-Package: org.springframework.ide.eclipse.config.ui.widgets
+           -> Export-Package: org.springframework.ide.eclipse.config.ui.widgets; bundle-symbolic-name="org.springframework.ide.eclipse.config.ui"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+  Unresolved requirement: Import-Package: org.springframework.ide.eclipse.webflow.ui.editor
+    -> Export-Package: org.springframework.ide.eclipse.webflow.ui.editor; bundle-symbolic-name="org.springframework.ide.eclipse.webflow.ui.editor"; bundle-version="3.9.22.202204280911-RELEASE"; version="0.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.wizard 4 0 2023-08-29 16:20:29.011
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.wizard [1046]
+  Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+       org.springframework.web [1054]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+  Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2023-08-29 16:20:29.027
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1061]
+  Unresolved requirement: Require-Bundle: org.springframework.web
+    -> Bundle-SymbolicName: org.springframework.web; bundle-version="4.3.23.20190313-CI"
+       org.springframework.web [1054]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.el; version="[1.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui 2 0 2023-08-29 16:20:34.973
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-08-29 16:20:34.973
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2023-08-29 16:20:35.894
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2023-08-29 16:20:35.894
+!MESSAGE Commands should really have a category: plug-in='org.springframework.ide.eclipse.boot', id='org.springframework.ide.eclipse.boot.ui.EnableDisableBootDevtools', categoryId='org.springframework.ide.eclipse.boot.commands.category'
+
+!ENTRY org.eclipse.jface 2 0 2023-08-29 16:20:37.866
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-29 16:20:37.867
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-08-29 16:20:49.911
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\saifa'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-29 16:22:09.723
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:872)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:178)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jface.text.codemining.CodeMiningStrategy.reconcile(CodeMiningStrategy.java:56)
+	at org.eclipse.jface.text.reconciler.Reconciler.process(Reconciler.java:151)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-08-29 16:29:39.753
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-08-29 16:29:39.755
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-08-29 16:29:39.759
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-08-29 16:29:39.761
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-08-29 16:29:39.933
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-08-29 16:29:39.977
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 4 0 2023-08-29 16:29:40.105
+!MESSAGE Error while getting URI 'platform:/plugin/org.springframework.beans/org/springframework/beans/factory/xml/spring-beans.dtd' from plugin 'org.springframework.ide.eclipse.beans.ui.editor' : /org/springframework/beans/factory/xml/spring-beans.dtd
+!STACK 0
+java.io.FileNotFoundException: /org/springframework/beans/factory/xml/spring-beans.dtd
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:55)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:182)
+	at java.base/java.net.URL.openConnection(URL.java:1094)
+	at org.eclipse.osgi.storage.url.BundleURLConverter.resolve(BundleURLConverter.java:55)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.resolve(PlatformURLConverter.java:53)
+	at org.eclipse.core.runtime.FileLocator.resolve(FileLocator.java:288)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.resolveURI(XMLCatalogs.java:157)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.lambda$3(XMLCatalogs.java:72)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getWTPExtensionCatalog(XMLCatalogs.java:68)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLCatalogs.getAllCatalogs(XMLCatalogs.java:53)
+	at org.eclipse.wildwebdeveloper.xml.internal.ui.preferences.XMLPreferenceServerConstants.storePreferencesToLemminxOptions(XMLPreferenceServerConstants.java:193)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.mergeCustomInitializationOptions(XMLLanguageServer.java:204)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getInitializationOptions(XMLLanguageServer.java:182)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:263)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-08-29 16:29:40.694
+!MESSAGE An internal error occurred during: "Update Maven projects configuration".
+!STACK 0
+java.lang.NoSuchMethodError: 'org.apache.maven.project.MavenProject org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest.getMavenProject()'
+	at org.springframework.ide.eclipse.maven.AbstractSpringProjectConfigurator.configure(AbstractSpringProjectConfigurator.java:40)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:123)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:504)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:498)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$4(ProjectConfigurationManager.java:426)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:414)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1097)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:178)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-29 16:30:00.137
+!MESSAGE Could not detect hyperlinks due to timeout after 800 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:68)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-08-29 16:30:10.349
+!MESSAGE An internal error occurred during: "Updating Maven Project".
+!STACK 0
+java.lang.NoSuchMethodError: 'org.apache.maven.project.MavenProject org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest.getMavenProject()'
+	at org.springframework.ide.eclipse.maven.AbstractSpringProjectConfigurator.configure(AbstractSpringProjectConfigurator.java:40)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:123)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:504)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:498)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$4(ProjectConfigurationManager.java:426)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:414)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1097)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-08-29 16:30:13.636
+!MESSAGE An internal error occurred during: "Updating Maven Project".
+!STACK 0
+java.lang.NoSuchMethodError: 'org.apache.maven.project.MavenProject org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest.getMavenProject()'
+	at org.springframework.ide.eclipse.maven.AbstractSpringProjectConfigurator.configure(AbstractSpringProjectConfigurator.java:40)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:123)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:504)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:498)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$4(ProjectConfigurationManager.java:426)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:414)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1097)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-08-29 16:38:33.451
+!MESSAGE An internal error occurred during: "Update Maven projects configuration".
+!STACK 0
+java.lang.NoSuchMethodError: 'org.apache.maven.project.MavenProject org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest.getMavenProject()'
+	at org.springframework.ide.eclipse.maven.AbstractSpringProjectConfigurator.configure(AbstractSpringProjectConfigurator.java:40)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:123)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:504)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:498)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$4(ProjectConfigurationManager.java:426)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:414)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1097)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:178)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-29 17:04:55.868
+!MESSAGE Could not detect hyperlinks due to timeout after 800 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:68)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-08-30 10:38:50.924
+!MESSAGE An internal error occurred during: "Update Maven projects configuration".
+!STACK 0
+java.lang.NoSuchMethodError: 'org.apache.maven.project.MavenProject org.eclipse.m2e.core.project.configurator.ProjectConfigurationRequest.getMavenProject()'
+	at org.springframework.ide.eclipse.maven.AbstractSpringProjectConfigurator.configure(AbstractSpringProjectConfigurator.java:40)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:123)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$6(ProjectConfigurationManager.java:504)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:498)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$4(ProjectConfigurationManager.java:426)
+	at java.base/java.util.Collection.removeIf(Collection.java:576)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:414)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1097)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.project.MavenProjectConfigurator$UpdateMavenConfigurationJob.run(MavenProjectConfigurator.java:178)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2023-08-30 15:16:54.499
+!MESSAGE Connection to https://dist.springsource.com/release/STS/doc/updates.xml failed on No such host is known (dist.springsource.com). Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: No such host is known (dist.springsource.com)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
