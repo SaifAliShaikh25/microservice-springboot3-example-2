@@ -1,0 +1,5 @@
+package com.example2microservice.departmentservice.controller;
+
+public class ApiToEmployee {
+
+}

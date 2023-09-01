@@ -1,7 +1,5 @@
 package com.example2microservice.departmentservice.model;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -32,15 +30,6 @@ public class Department {
 		this.name = name;
 	}
 
-	/*
-	 * private List<Employee> employees = new ArrayList<>();
-	 * 
-	 * public List<Employee> getEmployees() { return employees; }
-	 * 
-	 * public void setEmployees(List<Employee> employees) { this.employees =
-	 * employees; }
-	 * 
-	 */
 
 	public Department() {
 		super();
@@ -51,10 +40,6 @@ public class Department {
 		this.id = id;
 		this.name = name;
 	}
-	/*
-	 * @Override public String toString() { return "Department [id=" + id +
-	 * ", name=" + name + ", employees=" + employees + "]"; }
-	 */
 
 	@Override
 	public String toString() {

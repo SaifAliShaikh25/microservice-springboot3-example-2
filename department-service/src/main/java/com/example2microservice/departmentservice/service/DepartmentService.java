@@ -34,4 +34,10 @@ public class DepartmentService {
 
 		return departmentRepositoryInterface.findAll();
 	}
+
+	public List<Department> getDepartmentEmployees() {
+		
+		return departmentRepositoryInterface.findAll();
+		
+	}
 }

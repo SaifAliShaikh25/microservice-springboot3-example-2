@@ -1,0 +1,23 @@
+package com.example2microservice.departmentservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.example2microservice.departmentservice.model.Employee;
+
+@Service
+public class ApiToEmployee {
+
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	private static final String employeeBaseUrl = "http://employee-service/employee" ;
+	
+	public Employee employeeDetails(Long id) {
+		 Employee employee = restTemplate.getForObject(employeeBaseUrl+"/{id}", Employee.class, id);
+		 return employee;
+	}
+	
+	
+}
