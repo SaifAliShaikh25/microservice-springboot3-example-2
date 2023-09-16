@@ -1,5 +1,7 @@
 package com.example2microservice.departmentservice.service;
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -25,14 +27,24 @@ public class ApiToEmployee {
 		ResponseEntity<Employee[]> employeesList = restTemplate.getForEntity(employeeBaseUrl, Employee[].class);
 		Employee[] employeeList = employeesList.getBody();
 
+		
 		/*
-		 * Employee employee1 = webClientBuilder.build() .get() .uri(employeeBaseUrl)
-		 * .retrieve() .bodyToMono(Employee.class) .block();
-		 * 
-		 * System.out.println("Printing employee details ---");
-		 * System.out.println(employee1);
+		 * Employee employee1 =
+		 * webClientBuilder.build().get().uri(employeeBaseUrl).retrieve().bodyToMono(
+		 * Employee.class) .block();
 		 */
-		return employeeList;
+		String employeeUrl2 = "http://localhost:9002/employee";
+		
+	//	ResponseEntity<Employee[]> employee2 = webClientBuilder.build().get().uri(employeeBaseUrl).retrieve().toEntity(Employee[].class).block();
+	//	ResponseEntity<Employee> employee2 = webClientBuilder.build().get().uri(employeeUrl).retrieve().toEntity(Employee.class).block();
+//		ResponseEntity<Employee[]> employee2 = webClientBuilder.build().get().uri(employeeUrl2).retrieve().toEntity(Employee[].class).block();
+
+		Employee[] employee2 = webClientBuilder.build().get().uri(employeeUrl2).retrieve().bodyToMono(Employee[].class).block();
+	//	Employee[] employee2 = webClientBuilder.build().get().uri(employeeBaseUrl).retrieve().bodyToMono(Employee[].class).block();
+
+	
+		return employee2;
+		// return employeeList;
 	}
 
 }
