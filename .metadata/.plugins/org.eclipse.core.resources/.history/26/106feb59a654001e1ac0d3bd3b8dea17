@@ -25,13 +25,15 @@ public class ApiToEmployee {
 		ResponseEntity<Employee[]> employeesList = restTemplate.getForEntity(employeeBaseUrl, Employee[].class);
 		Employee[] employeeList = employeesList.getBody();
 
-		/*
-		 * Employee employee1 = webClientBuilder.build() .get() .uri(employeeBaseUrl)
-		 * .retrieve() .bodyToMono(Employee.class) .block();
-		 * 
-		 * System.out.println("Printing employee details ---");
-		 * System.out.println(employee1);
-		 */
+		Employee employee1 = webClientBuilder.build()
+		.get()
+		.uri(employeeBaseUrl)
+		.retrieve()
+		.bodyToMono(Employee.class)
+		.block();
+		
+		System.out.println("Printing employee details ---");
+		System.out.println(employee1);
 		return employeeList;
 	}
 
