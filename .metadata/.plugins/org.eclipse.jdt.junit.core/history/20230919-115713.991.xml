@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeServiceApplicationTests" project="employee-service" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example2microservice.employeeservice.EmployeeServiceApplicationTests" time="0.478" displayname="EmployeeServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.example2microservice.employeeservice.EmployeeServiceApplicationTests]">
+    <testcase name="getEmployeesByDepartmentTest" classname="com.example2microservice.employeeservice.EmployeeServiceApplicationTests" time="0.431" displayname="getEmployeesByDepartmentTest()" uniqueid="[engine:junit-jupiter]/[class:com.example2microservice.employeeservice.EmployeeServiceApplicationTests]/[method:getEmployeesByDepartmentTest()]"/>
+    <testcase name="getAllEmployeesTest" classname="com.example2microservice.employeeservice.EmployeeServiceApplicationTests" time="0.043" displayname="getAllEmployeesTest()" uniqueid="[engine:junit-jupiter]/[class:com.example2microservice.employeeservice.EmployeeServiceApplicationTests]/[method:getAllEmployeesTest()]"/>
+  </testsuite>
+</testrun>

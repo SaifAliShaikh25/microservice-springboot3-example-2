@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeServiceApplicationTests" project="employee-service" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example2microservice.employeeservice.EmployeeServiceApplicationTests" time="0.002" displayname="EmployeeServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.example2microservice.employeeservice.EmployeeServiceApplicationTests]">
+    <testcase name="getAllEmployees" classname="com.example2microservice.employeeservice.EmployeeServiceApplicationTests" time="0.002" displayname="getAllEmployees()" uniqueid="[engine:junit-jupiter]/[class:com.example2microservice.employeeservice.EmployeeServiceApplicationTests]/[method:getAllEmployees()]"/>
+  </testsuite>
+</testrun>
