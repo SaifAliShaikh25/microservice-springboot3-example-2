@@ -1,5 +1,0 @@
-package com.example2microservice.employeeservice.model;
-
-public class Employee {
-
-}

@@ -1,0 +1,43 @@
+package com.example2microservice.employeeservice;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import static org.mockito.Mockito.when;
+
+import org.junit.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.example2microservice.employeeservice.model.Employee;
+import com.example2microservice.employeeservice.repository.EmployeeRepository;
+import com.example2microservice.employeeservice.service.EmployeeService;
+
+@RunWith(SpringRunner.class) 
+@SpringBootTest
+@ExtendWith(MockitoExtension.class)
+public class EmployeeServiceTest {
+	
+	@Mock
+	private EmployeeRepository employeeRepository;
+	
+	@InjectMocks
+	private EmployeeService employeeService;
+	
+	@Test
+	public void saveEmployeeTest() {
+		Employee employee = new Employee(301L, "Chavan", "FrontEnd Developer", 29, 2L);
+		
+		when(employeeRepository.save(Mockito.any(Employee.class))).thenReturn(employee);
+		
+		Employee savedEmployee = employeeService.saveEmployee(employee);
+		assertThat(savedEmployee).isNotNull();
+		
+	}
+
+}

@@ -1,5 +1,0 @@
-package com.example2microservice.departmentservice.model;
-
-public record EmployeeRecord(Long id, Long departmentId, String name, String position, int age) {
-	
-}

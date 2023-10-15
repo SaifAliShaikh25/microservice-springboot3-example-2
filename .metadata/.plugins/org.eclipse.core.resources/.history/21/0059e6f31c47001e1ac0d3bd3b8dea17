@@ -1,5 +1,0 @@
-package com.example2microservice.departmentservice.client;
-
-public interface EmployeeClient {
-
-}

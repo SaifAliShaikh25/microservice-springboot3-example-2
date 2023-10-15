@@ -60,10 +60,19 @@ public class EmployeeController {
 	@PutMapping("/{id}")
 	public ResponseEntity<Optional<Employee>> updateEmployee(@PathVariable("id") Long id, @RequestBody Employee employee) {
 	Optional<Employee> currentEmployee = employeeService.getEmployeeById(id);
-		currentEmployee.get().setName(employee.getName());
-		currentEmployee.get().setPosition(employee.getPosition());
-		currentEmployee.get().setAge(employee.getAge());
-		currentEmployee.get().setDepartmentId(employee.getDepartmentId());
+	/*
+	 * currentEmployee.get().setName(employee.getName());
+	 * currentEmployee.get().setPosition(employee.getPosition());
+	 * currentEmployee.get().setAge(employee.getAge());
+	 * currentEmployee.get().setDepartmentId(employee.getDepartmentId());
+	 */
+	
+	
+	
+	currentEmployee.get().setName(employee.getName());
+	currentEmployee.get().setPosition(employee.getPosition());
+	currentEmployee.get().setAge(employee.getAge());
+	currentEmployee.get().setDepartmentId(employee.getDepartmentId());
 		employeeService.saveEmployee(currentEmployee.get());
 		
 		return ResponseEntity.ok(currentEmployee);
