@@ -2,11 +2,8 @@ package com.example2microservice.employeeservice;
 
 import com.example2microservice.employeeservice.controller.EmployeeController;
 import com.example2microservice.employeeservice.model.Employee;
-import com.example2microservice.employeeservice.repository.EmployeeRepository;
-import com.example2microservice.employeeservice.service.EmployeeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -25,11 +21,6 @@ public class EmployeeControllerTest {
 
     @Mock
     private EmployeeController employeeController;
-
-    @InjectMocks
-    private EmployeeService employeeService;
-    private EmployeeRepository employeeRepository;
-
 
     @Test
     public void update_Employee_Test(){
